@@ -62,6 +62,21 @@ Dự án demo: API đơn hàng Node/Express, thêm chức năng hủy đơn hoà
 | 06 | [Ghi nhận sai sót & bảo trì](./demo-brownfield/06-ghi-nhan-va-bao-tri.md) |
 | 07 | [So sánh hai đường](./demo-brownfield/07-so-sanh-hai-duong.md) |
 
+### 📓 [`doc-ma-nguon/`](./doc-ma-nguon/index.md) — Hướng dẫn đọc mã nguồn tool
+
+Đọc hiểu mã nguồn BMAD-METHOD để **tái sử dụng mẫu hình ở dự án khác**.
+
+| # | File | Nội dung |
+| --- | --- | --- |
+| — | [Mục lục](./doc-ma-nguon/index.md) | Bản đồ mã nguồn, 7 kỹ thuật đáng mượn |
+| 01 | [Bản đồ và đường đọc](./doc-ma-nguon/01-ban-do-va-duong-doc.md) | 6 đường đọc theo mục tiêu; file nào trả lời câu hỏi nào |
+| 02 | [Tầng phân phối](./doc-ma-nguon/02-tang-phan-phoi.md) | Installer Node.js ~13k dòng |
+| 03 | [Tầng runtime Python](./doc-ma-nguon/03-tang-runtime-python.md) | 5 script, thuật toán hợp nhất và kết xuất |
+| 04 | [Tầng nội dung](./doc-ma-nguon/04-tang-noi-dung.md) | Nội dung là mã: logic nghiệp vụ trong văn xuôi |
+| 05 | [Tầng chất lượng](./doc-ma-nguon/05-tang-chat-luong.md) | Validator, cổng chất lượng, CI/CD |
+| 06 | [**Bảy mẫu hình tái sử dụng**](./doc-ma-nguon/06-mau-hinh-tai-su-dung.md) | ★ Mã thật + bản port + đánh đổi |
+| 07 | [Áp dụng vào dự án của bạn](./doc-ma-nguon/07-ap-dung-vao-du-an-cua-ban.md) | 3 kịch bản kèm mã khởi đầu |
+
 ---
 
 ## Bắt đầu từ đâu
@@ -74,6 +89,7 @@ graph TB
   Q -->|Hieu no hoat dong ra sao| T["tai-lieu-he-thong/02 muc 2 va 5"]
   Q -->|Xem vi du du an MOI| DM["demo/index.md"]
   Q -->|Xem vi du du an DA CO MA| DB["demo-brownfield/index.md"]
+  Q -->|Doc ma nguon de tai su dung| MN["doc-ma-nguon/index.md"]
   Q -->|Tuy bien hanh vi| C["tai-lieu-core/A3"]
   Q -->|Chay tay tung script| M["tai-lieu-core/C1"]
   Q -->|Gap loi| E["tai-lieu-he-thong/03 muc 11"]
@@ -86,6 +102,7 @@ graph TB
 | **Trưởng nhóm / kiến trúc sư** | `tai-lieu-he-thong/01` → `02` §2, §12 → `03` §8 |
 | **Người tùy biến hệ thống** | `tai-lieu-he-thong/03` §5 → `tai-lieu-core/A3` |
 | **Người muốn hiểu sâu cơ chế** | `tai-lieu-core/` A1→A5 rồi B1→B9 → C1 |
+| **Người muốn tái sử dụng mã nguồn** | `doc-ma-nguon/` 01 → 06 → 07 |
 
 ---
 
@@ -94,8 +111,8 @@ graph TB
 | Hạng mục | Giá trị |
 | --- | --- |
 | Phiên bản BMAD được mô tả | 6.10.0 |
-| Số file tài liệu | 39 |
-| Sơ đồ Mermaid | 120+ |
+| Số file tài liệu | 47 |
+| Sơ đồ Mermaid | 140+ |
 | Module chính thức được mô tả | 7 (2 đóng gói + 5 ngoài) |
 | Skill module `core` | 8 + 6 shim |
 | Skill module `bmm` | 17 mục menu + 13 shim |
