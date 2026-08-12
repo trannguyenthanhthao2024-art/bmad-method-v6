@@ -45,6 +45,23 @@ Dự án demo: hệ thống quản lý kho vật tư xây dựng, làm mới t�
 | 07 | [Review & Retrospective](./demo/07-review-va-retro.md) |
 | 08 | [Bản đồ luồng dữ liệu](./demo/08-ban-do-luong-du-lieu.md) |
 
+### 📕 [`demo-brownfield/`](./demo-brownfield/index.md) — Kịch bản chạy brownfield
+
+Áp BMAD vào **dự án đã có mã nguồn**: 47.000 dòng, 3 năm tuổi, không tài liệu.
+
+Dự án demo: API đơn hàng Node/Express, thêm chức năng hủy đơn hoàn tiền một phần.
+
+| Bước | File |
+| --- | --- |
+| 00 | [Bối cảnh](./demo-brownfield/00-boi-canh.md) |
+| 01 | [Cài đặt & định hướng](./demo-brownfield/01-cai-dat-va-dinh-huong.md) |
+| 02 | [Thiết lập ngữ cảnh repo](./demo-brownfield/02-project-context.md) |
+| 03 | [Phê chuẩn kiến trúc](./demo-brownfield/03-phe-chuan-kien-truc.md) |
+| 04 | [Chốt phạm vi thay đổi](./demo-brownfield/04-chot-pham-vi.md) |
+| 05 | [Thực thi](./demo-brownfield/05-thuc-thi.md) |
+| 06 | [Ghi nhận sai sót & bảo trì](./demo-brownfield/06-ghi-nhan-va-bao-tri.md) |
+| 07 | [So sánh hai đường](./demo-brownfield/07-so-sanh-hai-duong.md) |
+
 ---
 
 ## Bắt đầu từ đâu
@@ -55,7 +72,8 @@ graph TB
   Q -->|Cai va dung ngay| V["tai-lieu-he-thong/03 muc 1-4"]
   Q -->|Hieu he thong lam gi| D["tai-lieu-he-thong/01 muc 2 va 5"]
   Q -->|Hieu no hoat dong ra sao| T["tai-lieu-he-thong/02 muc 2 va 5"]
-  Q -->|Xem mot vi du chay that| DM["demo/index.md"]
+  Q -->|Xem vi du du an MOI| DM["demo/index.md"]
+  Q -->|Xem vi du du an DA CO MA| DB["demo-brownfield/index.md"]
   Q -->|Tuy bien hanh vi| C["tai-lieu-core/A3"]
   Q -->|Chay tay tung script| M["tai-lieu-core/C1"]
   Q -->|Gap loi| E["tai-lieu-he-thong/03 muc 11"]
@@ -63,7 +81,8 @@ graph TB
 
 | Vai trò của bạn | Đọc theo thứ tự |
 | --- | --- |
-| **Người dùng mới** | `demo/` toàn bộ → `tai-lieu-he-thong/03` §1–4 |
+| **Người dùng mới, dự án mới** | `demo/` toàn bộ → `tai-lieu-he-thong/03` §1–4 |
+| **Người nhận dự án kế thừa** | `demo-brownfield/` toàn bộ → `tai-lieu-core/A3` |
 | **Trưởng nhóm / kiến trúc sư** | `tai-lieu-he-thong/01` → `02` §2, §12 → `03` §8 |
 | **Người tùy biến hệ thống** | `tai-lieu-he-thong/03` §5 → `tai-lieu-core/A3` |
 | **Người muốn hiểu sâu cơ chế** | `tai-lieu-core/` A1→A5 rồi B1→B9 → C1 |
@@ -75,8 +94,8 @@ graph TB
 | Hạng mục | Giá trị |
 | --- | --- |
 | Phiên bản BMAD được mô tả | 6.10.0 |
-| Số file tài liệu | 31 |
-| Sơ đồ Mermaid | 90+ |
+| Số file tài liệu | 39 |
+| Sơ đồ Mermaid | 120+ |
 | Module chính thức được mô tả | 7 (2 đóng gói + 5 ngoài) |
 | Skill module `core` | 8 + 6 shim |
 | Skill module `bmm` | 17 mục menu + 13 shim |
