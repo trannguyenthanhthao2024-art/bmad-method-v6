@@ -37,8 +37,8 @@ uv run .../resolve_config.py --project-root D:/du-an/quan-ly-kho
 ```
 
 ```
-👁️ _bmad-output/planning-artifacts/prd.md          (nguồn chính)
-👁️ _bmad-output/planning-artifacts/brief.md         (bối cảnh)
+👁️ _bmad-output/planning-artifacts/prds/prd-quan-ly-kho-2026-08-11/prd.md          (nguồn chính)
+👁️ _bmad-output/planning-artifacts/briefs/brief-quan-ly-kho-2026-08-11/brief.md         (bối cảnh)
 👁️ package.json                                     (ngăn xếp hiện có)
 👁️ src/                                             (rỗng — greenfield)
 ```
@@ -102,7 +102,7 @@ Trước khi kết thúc, skill chạy:
 
 ```bash
 uv run .../bmad-architecture/scripts/lint_spine.py \
-  _bmad-output/planning-artifacts/ARCHITECTURE-SPINE.md
+  _bmad-output/planning-artifacts/architecture/architecture-quan-ly-kho-2026-08-11/ARCHITECTURE-SPINE.md
 ```
 
 **Đầu ra:**
@@ -118,7 +118,7 @@ uv run .../bmad-architecture/scripts/lint_spine.py \
 
 ## A.6 Tạo phẩm
 
-### 📄 `_bmad-output/planning-artifacts/ARCHITECTURE-SPINE.md`
+### 📄 `_bmad-output/planning-artifacts/architecture/architecture-quan-ly-kho-2026-08-11/ARCHITECTURE-SPINE.md`
 
 ```markdown
 ---
@@ -126,7 +126,7 @@ title: Hệ thống Quản lý Kho — Architecture Spine
 created: 2026-08-11
 status: approved
 sources:
-  - _bmad-output/planning-artifacts/prd.md
+  - _bmad-output/planning-artifacts/prds/prd-quan-ly-kho-2026-08-11/prd.md
 ---
 
 # Architecture Spine — Hệ thống Quản lý Kho
@@ -296,8 +296,8 @@ graph LR
 ## B.3 Bước 1 — kiểm tra tiền điều kiện
 
 ```
-👁️ _bmad-output/planning-artifacts/prd.md               ✓
-👁️ _bmad-output/planning-artifacts/ARCHITECTURE-SPINE.md ✓
+👁️ _bmad-output/planning-artifacts/prds/prd-quan-ly-kho-2026-08-11/prd.md               ✓
+👁️ _bmad-output/planning-artifacts/architecture/architecture-quan-ly-kho-2026-08-11/ARCHITECTURE-SPINE.md ✓
 👁️ _bmad-output/planning-artifacts/DESIGN.md            ✗ (không có — UX chưa chạy)
 ```
 
@@ -376,8 +376,8 @@ title: Hệ thống Quản lý Kho — Epics và Stories
 created: 2026-08-11
 status: approved
 sources:
-  - _bmad-output/planning-artifacts/prd.md
-  - _bmad-output/planning-artifacts/ARCHITECTURE-SPINE.md
+  - _bmad-output/planning-artifacts/prds/prd-quan-ly-kho-2026-08-11/prd.md
+  - _bmad-output/planning-artifacts/architecture/architecture-quan-ly-kho-2026-08-11/ARCHITECTURE-SPINE.md
 ---
 
 # Epics và Stories
@@ -658,7 +658,7 @@ _bmad-output/
 │   ├── brief.md
 │   ├── addendum.md
 │   ├── prd.md
-│   ├── prd.memlog.md
+│   ├── .memlog.md
 │   ├── ARCHITECTURE-SPINE.md      ← MỚI, cổng bắt buộc #2
 │   └── epics.md                   ← MỚI, cổng bắt buộc #3
 └── implementation-artifacts/

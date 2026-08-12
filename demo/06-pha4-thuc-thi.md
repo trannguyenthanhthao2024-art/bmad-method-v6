@@ -222,7 +222,7 @@ Lời gọi là `bmad-build story 1-1` — không phải đường dẫn file, n
 
 ```
 👁️ ls _bmad-output/planning-artifacts/
-   brief.md  addendum.md  prd.md  prd.memlog.md  ARCHITECTURE-SPINE.md  epics.md
+   brief.md  addendum.md  prd.md  .memlog.md  ARCHITECTURE-SPINE.md  epics.md
 
 👁️ ls _bmad-output/implementation-artifacts/
    sprint-status.yaml
@@ -590,7 +590,7 @@ lý do định sẵn theo loại. Không phụ thuộc DB, không phụ thuộc 
 - `package.json` — SỬA. Thêm `uuid` (runtime), `eslint-plugin-import` (dev).
 - `_bmad-output/planning-artifacts/addendum.md` — CHỈ ĐỌC. Nguồn của
   bảng lý do định sẵn (§4.2).
-- `_bmad-output/planning-artifacts/ARCHITECTURE-SPINE.md` — CHỈ ĐỌC.
+- `_bmad-output/planning-artifacts/architecture/architecture-quan-ly-kho-2026-08-11/ARCHITECTURE-SPINE.md` — CHỈ ĐỌC.
   Nguồn của kiểu `Transaction` (§Mô hình dữ liệu).
 
 ## Tasks & Acceptance

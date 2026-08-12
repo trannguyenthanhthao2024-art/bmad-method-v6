@@ -29,7 +29,7 @@ graph TB
   subgraph P2["PHA 2 - Lap ke hoach"]
     PB1 --> PRD[bmad-prd]
     PRD --> PRD1[prd.md]
-    PRD --> PRD2[prd.memlog.md]
+    PRD --> PRD2[.memlog.md]
   end
 
   subgraph P3["PHA 3 - Giai phap"]
@@ -78,7 +78,7 @@ graph TB
 | `bmad-help` | `bmad-help.csv`, cấu hình, quét tạo phẩm, `project_knowledge` | *(không)* | `resolve_config` |
 | `bmad-brainstorming` | `brain-methods.csv`, `references/mode-*.md`, `converge.md`, `finalize.md` | `.memlog.md`, `brainstorm.html`, `brainstorm-intent.md` | `resolve_customization`, `resolve_config`, `brain.py`, `memlog.py` |
 | `bmad-product-brief` | `brainstorm-intent.md`, `brief-template.md` | `brief.md`, `addendum.md` | `resolve_customization`, `resolve_config` |
-| `bmad-prd` | `brief.md`, `addendum.md`, `prd-template.md` | `prd.md`, `addendum.md`, `prd.memlog.md` | `resolve_customization`, `resolve_config`, `memlog.py` |
+| `bmad-prd` | `brief.md`, `addendum.md`, `prd-template.md` | `prd.md`, `addendum.md`, `.memlog.md` | `resolve_customization`, `resolve_config`, `memlog.py` |
 | `bmad-advanced-elicitation` | `methods.csv`, roster agent | *(sửa nội dung tại chỗ)* | `resolve_customization`, `pick_methods.py`, `resolve_config --key agents` |
 | `bmad-review` | nội dung, 7 file `references/`, `style_guide` | findings (chat hoặc `report_path`) | `resolve_customization`, `word_metrics.py` |
 | `bmad-architecture` | `prd.md`, `brief.md`, `package.json`, `src/`, `spine-template.md` | `ARCHITECTURE-SPINE.md` | `resolve_customization`, `resolve_config`, `lint_spine.py` |
@@ -290,7 +290,7 @@ D:/du-an/quan-ly-kho/
 │   │   ├── brief.md                                # tầm nhìn + lý do
 │   │   ├── addendum.md                             # chi tiết bổ trợ
 │   │   ├── prd.md                                  # 12 FR + 4 NFR
-│   │   ├── prd.memlog.md                           # nhật ký ra quyết định
+│   │   ├── .memlog.md                           # nhật ký ra quyết định
 │   │   ├── ARCHITECTURE-SPINE.md                   # 9 bất biến + 7 quyết định
 │   │   └── epics.md                                # 3 epic, 12 story
 │   │

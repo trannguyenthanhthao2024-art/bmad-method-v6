@@ -544,19 +544,35 @@ Script riêng của skill (ví dụ):
 | 1 | `brainstorm.html`, `brainstorm-intent.md` | HTML/MD | `{output_folder}/brainstorming` | `bmad-brainstorming` |
 | 1 | `forge-report.html`, `forged-idea.md` | HTML/MD | `{output_folder}/forge` | `bmad-forge-idea` |
 | 1 | `research.md` + briefing HTML | MD/HTML | `{planning_artifacts}/research` | `bmad-deep-recon` |
-| 1 | `brief.md`, `addendum.md` | MD | `{planning_artifacts}` | `bmad-product-brief` |
+| 1 | `brief.md`, `addendum.md`, `.memlog.md` | MD | `{planning_artifacts}/briefs/brief-{project_name}-{date}/` | `bmad-product-brief` |
 | 1 | `prfaq-{project}.md` | MD | `{planning_artifacts}` | `bmad-prfaq` |
-| 2 | `prd.md`, `addendum.md`, `.memlog.md` | MD | `{planning_artifacts}` | `bmad-prd` |
-| 2 | `DESIGN.md`, `EXPERIENCE.md` | MD | `{planning_artifacts}` | `bmad-ux` |
+| 2 | `prd.md`, `addendum.md`, `.memlog.md` | MD | `{planning_artifacts}/prds/prd-{project_name}-{date}/` | `bmad-prd` |
+| 2 | `DESIGN.md`, `EXPERIENCE.md` | MD | `{planning_artifacts}/ux-designs/ux-{project_name}-{date}/` | `bmad-ux` |
 | 2 | `SPEC.md` + companion, `stories.yaml` | MD/YAML | `{output_folder}/specs/spec-{slug}/` | `bmad-spec` |
-| 3 | `ARCHITECTURE-SPINE.md` | MD | `{planning_artifacts}` | `bmad-architecture` |
-| 3 | File epic chứa story | MD | `{planning_artifacts}` | `bmad-create-epics-and-stories` |
+| 3 | `ARCHITECTURE-SPINE.md` | MD | `{planning_artifacts}/architecture/architecture-{project_name}-{date}/` | `bmad-architecture` |
+| 3 | `epics.md` (chứa story) | MD | `{planning_artifacts}` | `bmad-create-epics-and-stories` |
 | 3 | `sprint-status.yaml` | YAML | `{implementation_artifacts}` | `bmad-sprint-planning` |
 | 4 | `spec-{slug}.md` + mã nguồn | MD + code | `{implementation_artifacts}` + repo | `bmad-build` |
 | 4 | `epic-<N>-context.md` | MD | `{implementation_artifacts}` | `bmad-build` (cache ngữ cảnh epic) |
 | 4 | `deferred-work.md` | MD | `{implementation_artifacts}` | `bmad-build` (khi tách mục tiêu) |
 | 4 | Findings JSON + báo cáo MD | JSON/MD | chat hoặc `report_path` | `bmad-review`, `bmad-code-review` |
 | 4 | Tài liệu retro + action item | MD | `{implementation_artifacts}` | `bmad-retrospective` |
+
+> ⭐ **Bốn skill dùng "thư mục chạy" (run folder), không ghi file phẳng.** Mẫu do
+> `{workflow.run_folder_pattern}` trong `customize.toml` quyết định — mỗi lần chạy
+> một thư mục riêng, nên chạy lại không đè lên lần trước:
+>
+> | Skill | `*_output_path` | `run_folder_pattern` |
+> | --- | --- | --- |
+> | `bmad-product-brief` | `{planning_artifacts}/briefs` | `brief-{project_name}-{date}` |
+> | `bmad-prd` | `{planning_artifacts}/prds` | `prd-{project_name}-{date}` |
+> | `bmad-ux` | `{planning_artifacts}/ux-designs` | `ux-{project_name}-{date}` |
+> | `bmad-architecture` | `{planning_artifacts}/architecture` | `architecture-{project_name}-{date}` |
+> | `bmad-spec` | `{output_folder}/specs` | `spec-{slug}` |
+>
+> Ngược lại, `bmad-create-epics-and-stories`, `bmad-sprint-planning`,
+> `bmad-build` và `bmad-retrospective` **không** có `run_folder_pattern` —
+> chúng ghi thẳng vào `{planning_artifacts}` hoặc `{implementation_artifacts}`.
 
 ### 8.2 Lược đồ `sprint-status.yaml`
 

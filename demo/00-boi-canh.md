@@ -115,7 +115,7 @@ graph TB
 ```
 D:/du-an/quan-ly-kho/
 ├── .claude/
-│   └── skills/                          ← 39 thư mục skill (bản sao)
+│   └── skills/                          ← 49 thư mục skill (bản sao)
 │       ├── bmad-help/
 │       ├── bmad-build/
 │       └── ...
@@ -144,7 +144,7 @@ D:/du-an/quan-ly-kho/
 │   ├── planning-artifacts/
 │   │   ├── brief.md
 │   │   ├── prd.md
-│   │   ├── prd.memlog.md
+│   │   ├── .memlog.md
 │   │   ├── ARCHITECTURE-SPINE.md
 │   │   └── epics.md
 │   └── implementation-artifacts/

@@ -43,7 +43,7 @@ uv run D:/du-an/quan-ly-kho/_bmad/scripts/resolve_config.py \
 Rồi skill quét `{planning_artifacts}`:
 
 ```
-👁️ _bmad-output/planning-artifacts/brief.md          (tìm thấy)
+👁️ _bmad-output/planning-artifacts/briefs/brief-quan-ly-kho-2026-08-11/brief.md          (tìm thấy)
 👁️ _bmad-output/planning-artifacts/addendum.md       (tìm thấy)
 ```
 
@@ -276,7 +276,7 @@ Sau khi PRD hoàn chỉnh, `customize.toml` của `bmad-prd` có `doc_standards`
 
 ```bash
 uv run .../resolve_customization.py --skill .../bmad-review --key workflow
-uv run .../bmad-review/scripts/word_metrics.py _bmad-output/planning-artifacts/prd.md
+uv run .../bmad-review/scripts/word_metrics.py _bmad-output/planning-artifacts/prds/prd-quan-ly-kho-2026-08-11/prd.md
 ```
 
 **Đầu ra `word_metrics.py`:**
@@ -354,7 +354,7 @@ Chấp nhận từng dòng hay tất cả?
 
 ## 8. Tạo phẩm
 
-### 📄 `_bmad-output/planning-artifacts/prd.md`
+### 📄 `_bmad-output/planning-artifacts/prds/prd-quan-ly-kho-2026-08-11/prd.md`
 
 ```markdown
 ---
@@ -363,7 +363,7 @@ created: 2026-08-11
 status: approved
 version: 1.0
 sources:
-  - _bmad-output/planning-artifacts/brief.md
+  - _bmad-output/planning-artifacts/briefs/brief-quan-ly-kho-2026-08-11/brief.md
   - _bmad-output/brainstorming/brainstorm-quan-ly-kho-2026-08-11/brainstorm-intent.md
 ---
 
@@ -520,7 +520,7 @@ Giao dịch được ghi cục bộ trước khi hiện xác nhận cho người
 
 Chi tiết bổ trợ: danh sách 2.000 mã hàng theo 12 nhóm, bảng lý do giao dịch định sẵn, ghi chú phỏng vấn 3 nhân viên kho, khảo sát thời gian thao tác hiện tại.
 
-### 📄 `_bmad-output/planning-artifacts/prd.memlog.md`
+### 📄 `_bmad-output/planning-artifacts/prds/prd-quan-ly-kho-2026-08-11/.memlog.md`
 
 ```markdown
 ---
@@ -595,7 +595,7 @@ sequenceDiagram
 | --- | --- |
 | Script chạy | `resolve_customization.py` ×3, `resolve_config.py` ×1, `memlog.py` ×13, `pick_methods.py` ×3, `word_metrics.py` ×1 |
 | 👁️ File đọc | `brief.md`, `addendum.md`, `methods.csv`, `editorial-common.md`, `structure-models.md`, `lens-structure.md`, `lens-prose.md` |
-| 📄 File ghi | `prd.md`, `addendum.md` (cập nhật), `prd.memlog.md` |
+| 📄 File ghi | `prd.md`, `addendum.md` (cập nhật), `.memlog.md` |
 | Skill khác được gọi | `bmad-advanced-elicitation`, `bmad-review` |
 | 🤖 Subagent | 2 (hai lens review) |
 | 🛑 Điểm dừng | ~14 |
@@ -613,7 +613,7 @@ _bmad-output/
     ├── brief.md
     ├── addendum.md
     ├── prd.md              ← MỚI, cổng bắt buộc #1 đã qua
-    └── prd.memlog.md       ← MỚI
+    └── .memlog.md       ← MỚI
 ```
 
 ---

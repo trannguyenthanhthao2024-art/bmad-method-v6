@@ -259,7 +259,7 @@ Bạn thấy sao?
 
 ```bash
 uv run .../bmad-architecture/scripts/lint_spine.py \
-  _bmad-output/planning-artifacts/ARCHITECTURE-SPINE.md
+  _bmad-output/planning-artifacts/architecture/architecture-donhang-api-2026-08-11/ARCHITECTURE-SPINE.md
 ```
 
 ```json
@@ -275,7 +275,7 @@ uv run .../bmad-architecture/scripts/lint_spine.py \
 
 ## 9. Tạo phẩm
 
-📄 **`_bmad-output/planning-artifacts/ARCHITECTURE-SPINE.md`**
+📄 **`_bmad-output/planning-artifacts/architecture/architecture-donhang-api-2026-08-11/ARCHITECTURE-SPINE.md`**
 
 ```markdown
 ---

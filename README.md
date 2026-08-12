@@ -27,6 +27,22 @@ Dành cho việc **đọc hiểu và vận hành thủ công** module `core`.
 | **Từng skill** | [B1 bmad-help](./tai-lieu-core/B1-bmad-help.md) · [B2 advanced-elicitation](./tai-lieu-core/B2-bmad-advanced-elicitation.md) · [B3 review](./tai-lieu-core/B3-bmad-review.md) · [B4 customize](./tai-lieu-core/B4-bmad-customize.md) · [B5 brainstorming](./tai-lieu-core/B5-bmad-brainstorming.md) · [B6 deep-recon](./tai-lieu-core/B6-bmad-deep-recon.md) · [B7 forge-idea](./tai-lieu-core/B7-bmad-forge-idea.md) · [B8 party-mode](./tai-lieu-core/B8-bmad-party-mode.md) · [B9 v6-shims](./tai-lieu-core/B9-v6-shims.md) |
 | **Thực hành** | [C1 Sổ tay vận hành thủ công](./tai-lieu-core/C1-so-tay-van-hanh-thu-cong.md) |
 
+### 📒 [`tai-lieu-bmm/`](./tai-lieu-bmm/index.md) — Module BMM chi tiết
+
+Module chính của BMAD: 22 skill + 13 shim, 4 pha, 5 cổng bắt buộc.
+
+| # | File | Nội dung |
+| --- | --- | --- |
+| — | [Chỉ mục](./tai-lieu-bmm/index.md) | Bản đồ 22 skill, bảng tra cứu, 3 đường đọc |
+| 01 | [Tổng quan module BMM](./tai-lieu-bmm/01-tong-quan-module-bmm.md) | `module.yaml`, catalog 17 mục, 4 pha, điểm giao với core |
+| 02 | [Năm agent persona](./tai-lieu-bmm/02-nam-agent-persona.md) | Mary, John, Sally, Winston, Amelia — menu, tùy biến |
+| 03 | [Pha 1 — Phân tích](./tai-lieu-bmm/03-pha1-phan-tich.md) | `bmad-product-brief`, `bmad-prfaq` |
+| 04 | [Pha 2 — Lập kế hoạch](./tai-lieu-bmm/04-pha2-lap-ke-hoach.md) | `bmad-prd` ★, `bmad-ux`, `bmad-spec` |
+| 05 | [Pha 3 — Giải pháp](./tai-lieu-bmm/05-pha3-giai-phap.md) | `bmad-architecture` ★, epics ★, sprint-planning ★ |
+| 06 | [Pha 4 — Thực thi](./tai-lieu-bmm/06-pha4-thuc-thi.md) | `bmad-build` ★ + 6 skill hỗ trợ |
+| 07 | [Ngữ cảnh dự án](./tai-lieu-bmm/07-project-context.md) | `bmad-project-context` — on-ramp brownfield |
+| 08 | [Mười ba shim v6](./tai-lieu-bmm/08-v6-shims.md) | Tương thích ngược |
+
 ### 📙 [`demo/`](./demo/index.md) — Kịch bản chạy greenfield
 
 Ví dụ cụ thể tuần tự: **gọi lệnh gì → đọc/ghi file nào → kết quả ra sao**.
@@ -87,6 +103,7 @@ graph TB
   Q -->|Cai va dung ngay| V["tai-lieu-he-thong/03 muc 1-4"]
   Q -->|Hieu he thong lam gi| D["tai-lieu-he-thong/01 muc 2 va 5"]
   Q -->|Hieu no hoat dong ra sao| T["tai-lieu-he-thong/02 muc 2 va 5"]
+  Q -->|Hieu module chinh BMM| BM["tai-lieu-bmm/index.md"]
   Q -->|Xem vi du du an MOI| DM["demo/index.md"]
   Q -->|Xem vi du du an DA CO MA| DB["demo-brownfield/index.md"]
   Q -->|Doc ma nguon de tai su dung| MN["doc-ma-nguon/index.md"]
@@ -102,6 +119,7 @@ graph TB
 | **Trưởng nhóm / kiến trúc sư** | `tai-lieu-he-thong/01` → `02` §2, §12 → `03` §8 |
 | **Người tùy biến hệ thống** | `tai-lieu-he-thong/03` §5 → `tai-lieu-core/A3` |
 | **Người muốn hiểu sâu cơ chế** | `tai-lieu-core/` A1→A5 rồi B1→B9 → C1 |
+| **Người dùng module BMM** | `tai-lieu-bmm/` 01 → 02 → pha bạn đang ở |
 | **Người muốn tái sử dụng mã nguồn** | `doc-ma-nguon/` 01 → 06 → 07 |
 
 ---
@@ -111,12 +129,12 @@ graph TB
 | Hạng mục | Giá trị |
 | --- | --- |
 | Phiên bản BMAD được mô tả | 6.10.0 |
-| Số file tài liệu | 47 |
-| Sơ đồ Mermaid | 140+ |
+| Số file tài liệu | 57 |
+| Sơ đồ Mermaid | 230+ |
 | Module chính thức được mô tả | 7 (2 đóng gói + 5 ngoài) |
 | Skill module `core` | 8 + 6 shim |
-| Skill module `bmm` | 17 mục menu + 13 shim |
-| Nền tảng AI hỗ trợ | ~50 |
+| Skill module `bmm` | 22 skill (17 mục menu) + 13 shim |
+| Nền tảng AI hỗ trợ | 45 |
 
 ---
 

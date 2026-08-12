@@ -561,7 +561,7 @@ Từ đó mình rút ra:
 
 ## B.3 Tạo phẩm
 
-📄 **`_bmad-output/planning-artifacts/brief.md`**
+📄 **`_bmad-output/planning-artifacts/briefs/brief-quan-ly-kho-2026-08-11/brief.md`**
 
 ```markdown
 ---

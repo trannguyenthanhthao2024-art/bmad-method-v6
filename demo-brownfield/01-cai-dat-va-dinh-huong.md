@@ -70,7 +70,7 @@ Nếu **có**, `bmad-project-context` sẽ đọc chúng ở bước 1 và báo 
 
 ```
 ◇  Configuring IDE integrations ─────────────────────────
-│  ✓ claude-code — 39 skills installed to .claude/skills
+│  ✓ claude-code — 49 skills installed to .claude/skills
 
 └  Installation complete!
 
@@ -78,7 +78,7 @@ Nếu **có**, `bmad-project-context` sẽ đọc chúng ở bước 1 và báo 
 │  Version:      6.10.0                                   │
 │  Directory:    D:/du-an/donhang-api                     │
 │  Modules:      core, bmm                                │
-│  Skills:       39                                       │
+│  Skills:       49                                       │
 │  Agents:       5                                        │
 │  IDE:          claude-code                              │
 │  Output:       _bmad-output                             │
@@ -200,7 +200,7 @@ SAU ĐÓ — cho việc bạn được giao
        Ở brownfield vai trò là PHÊ CHUẨN, không phải thiết kế. Nó đọc
        đủ mã thật để chuẩn hóa các quy ước ĐANG CÓ thành bất biến, để
        thay đổi mới không phá chúng.
-       → _bmad-output/planning-artifacts/ARCHITECTURE-SPINE.md
+       → _bmad-output/planning-artifacts/architecture/architecture-donhang-api-2026-08-11/ARCHITECTURE-SPINE.md
 
   [SPC] Spec — `bmad-spec [path]`
        Chốt "CÁI GÌ" trước "NHƯ THẾ NÀO" cho riêng phần thay đổi. Với

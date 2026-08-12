@@ -133,7 +133,7 @@ TÙY CHỌN — Pha 1: Phân tích (không bắt buộc, nhưng đáng làm)
 
   [CB]  Create Brief — `bmad-product-brief`
         Chốt tầm nhìn sản phẩm. Tốt khi ý tưởng đã rõ.
-        → _bmad-output/planning-artifacts/brief.md
+        → _bmad-output/planning-artifacts/briefs/brief-quan-ly-kho-2026-08-11/brief.md
 
   [WB]  PRFAQ Challenge — `bmad-prfaq`
         Working Backwards — thử lửa concept từ góc khách hàng trước.
@@ -148,7 +148,7 @@ BẮT BUỘC — bước kế tiếp thật sự
         Đây là cổng bắt buộc đầu tiên. Không có PRD thì
         bmad-architecture không có gì để dựa vào.
         Có 3 ý định trong một skill: Create / Update / Validate.
-        → _bmad-output/planning-artifacts/prd.md
+        → _bmad-output/planning-artifacts/prds/prd-quan-ly-kho-2026-08-11/prd.md
 
 ───────────────────────────────────────────────────────────────
 

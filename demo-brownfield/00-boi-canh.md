@@ -157,7 +157,7 @@ graph LR
 
 ```
 D:/du-an/donhang-api/
-├── .claude/skills/                 ← 39 skill
+├── .claude/skills/                 ← 49 skill
 ├── _bmad/                          ← runtime BMad
 │   ├── config.toml
 │   ├── config.user.toml

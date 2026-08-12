@@ -300,7 +300,7 @@ status: 'draft'
 review_loop_iteration: 0
 context:
   - '{project-root}/AGENTS.md'
-  - '{project-root}/_bmad-output/planning-artifacts/ARCHITECTURE-SPINE.md'
+  - '{project-root}/_bmad-output/planning-artifacts/architecture/architecture-donhang-api-2026-08-11/ARCHITECTURE-SPINE.md'
 ---
 
 <frozen-after-approval reason="human-owned intent — do not modify unless human renegotiates">

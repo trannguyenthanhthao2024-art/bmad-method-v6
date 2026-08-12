@@ -46,7 +46,7 @@ uv run .../resolve_config.py --project-root D:/du-an/donhang-api
 
 ```
 👁️ AGENTS.md                                              (18 dòng, qua persistent_facts)
-👁️ _bmad-output/planning-artifacts/ARCHITECTURE-SPINE.md  (8 bất biến, 5 AD, 2 deferred, 2 open question)
+👁️ _bmad-output/planning-artifacts/architecture/architecture-donhang-api-2026-08-11/ARCHITECTURE-SPINE.md  (8 bất biến, 5 AD, 2 deferred, 2 open question)
 ```
 
 ```
@@ -179,7 +179,7 @@ uv run .../memlog.py init \
 id: SPEC-huy-don-hoan-tien-mot-phan
 companions: []
 sources:
-  - _bmad-output/planning-artifacts/ARCHITECTURE-SPINE.md
+  - _bmad-output/planning-artifacts/architecture/architecture-donhang-api-2026-08-11/ARCHITECTURE-SPINE.md
   - AGENTS.md
 ---
 

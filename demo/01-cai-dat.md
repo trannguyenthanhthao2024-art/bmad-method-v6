@@ -86,7 +86,7 @@ Bên trong, installer chạy:
 │  ◻ codex             Codex                 → .agents/skills
 │  ◻ cursor            Cursor                → .agents/skills
 │  ◻ github-copilot    GitHub Copilot        → .agents/skills
-│  ◻ ... (46 lựa chọn khác)
+│  ◻ ... (41 lựa chọn khác)
 └
 ```
 
@@ -182,7 +182,7 @@ Created directories:
 │  ✓ Configurations generated
 
 ◇  Configuring IDE integrations ─────────────────────────
-│  ✓ claude-code — 39 skills installed to .claude/skills
+│  ✓ claude-code — 49 skills installed to .claude/skills
 
 └  Installation complete!
 
@@ -190,7 +190,7 @@ Created directories:
 │  Version:      6.10.0                                   │
 │  Directory:    D:/du-an/quan-ly-kho                     │
 │  Modules:      core, bmm                                │
-│  Skills:       39                                       │
+│  Skills:       49                                       │
 │  Agents:       5                                        │
 │  IDE:          claude-code                              │
 │  Output:       _bmad-output                             │
@@ -242,7 +242,7 @@ sequenceDiagram
   I->>I: mergeModuleHelpCatalogs() -> bmad-help.csv
   I->>IDE: _setupIdes()
   IDE->>IDE: lam sach .claude/skills/ TRUOC
-  IDE->>IDE: copy 39 thu muc skill
+  IDE->>IDE: copy 49 thu muc skill
 ```
 
 ---
@@ -452,13 +452,13 @@ resolve_customization.py
 
 ```bash
 $ ls -1 .claude/skills/ | wc -l
-39
+49
 
 $ echo "Skill core: $(grep -c ',\"core\",' _bmad/_config/skill-manifest.csv)"
 Skill core: 14
 
 $ echo "Skill bmm: $(grep -c ',\"bmm\",' _bmad/_config/skill-manifest.csv)"
-Skill bmm: 25
+Skill bmm: 35
 ```
 
 ### Kiểm tra cấu hình hợp nhất
@@ -553,7 +553,7 @@ _bmad/config.user.toml
 | 📄 File tạo mới | ~450 (bao gồm mọi file skill) |
 | 📄 File cấu hình chính | 7 (`config.toml`, `config.user.toml`, 4 file trong `_config/`, `bmm/config.yaml`) |
 | Thư mục tạo | `_bmad/`, `.claude/skills/`, `_bmad-output/` |
-| Skill đăng ký | 39 |
+| Skill đăng ký | 49 |
 | Agent đăng ký | 5 |
 | Thời gian | ~3 phút |
 

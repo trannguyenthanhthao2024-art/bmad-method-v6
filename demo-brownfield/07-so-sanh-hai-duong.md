@@ -190,11 +190,16 @@ _bmad-output/
 │   ├── brainstorm.html
 │   └── brainstorm-intent.md
 ├── planning-artifacts/
-│   ├── brief.md
-│   ├── addendum.md
-│   ├── prd.md
-│   ├── prd.memlog.md
-│   ├── ARCHITECTURE-SPINE.md
+│   ├── briefs/brief-{project}-{date}/
+│   │   ├── brief.md
+│   │   ├── addendum.md
+│   │   └── .memlog.md
+│   ├── prds/prd-{project}-{date}/
+│   │   ├── prd.md
+│   │   ├── addendum.md
+│   │   └── .memlog.md
+│   ├── architecture/architecture-{project}-{date}/
+│   │   └── ARCHITECTURE-SPINE.md
 │   └── epics.md
 └── implementation-artifacts/
     ├── sprint-status.yaml
@@ -211,7 +216,8 @@ AGENTS.md                          ★ tạo phẩm quan trọng nhất
 
 _bmad-output/
 ├── planning-artifacts/
-│   └── ARCHITECTURE-SPINE.md      (phê chuẩn, phạm vi hẹp)
+│   └── architecture/architecture-{project}-{date}/
+│       └── ARCHITECTURE-SPINE.md  (phê chuẩn, phạm vi hẹp)
 ├── specs/
 │   └── spec-{slug}/
 │       ├── SPEC.md
@@ -356,7 +362,7 @@ done
 
 echo
 echo "═══ 4. Có spine chưa? ═══"
-[ -f "$R/_bmad-output/planning-artifacts/ARCHITECTURE-SPINE.md" ] \
+[ -f "$R/_bmad-output/planning-artifacts/architecture/architecture-donhang-api-2026-08-11/ARCHITECTURE-SPINE.md" ] \
   && echo "  ✓ ARCHITECTURE-SPINE.md" || echo "  — chưa có (chạy bmad-architecture)"
 
 echo
